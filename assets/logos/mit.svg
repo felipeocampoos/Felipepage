@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 44" role="img" aria-label="MIT Critical Data">
+  <rect x="8"  y="10" width="10" height="24" fill="#A31F34"/>
+  <rect x="22" y="10" width="10" height="10" fill="#A31F34"/>
+  <rect x="22" y="24" width="10" height="10" fill="#A31F34"/>
+  <rect x="36" y="10" width="10" height="24" fill="#A31F34"/>
+  <rect x="8" y="10" width="38" height="6" fill="#A31F34"/>
+  <text x="58" y="23" font-family="system-ui,sans-serif" font-size="8" font-weight="700" fill="#A31F34">Critical</text>
+  <text x="58" y="34" font-family="system-ui,sans-serif" font-size="8" font-weight="700" fill="#A31F34">Data</text>
+</svg>

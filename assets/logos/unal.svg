@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 44" role="img" aria-label="Universidad Nacional de Colombia">
+  <g transform="translate(10,4)">
+    <path d="M13,0 L26,0 L26,22 Q26,32 13,36 Q0,32 0,22 L0,0 Z" fill="#6b1929" opacity="0.9"/>
+    <line x1="13" y1="0" x2="13" y2="30" stroke="white" stroke-width="1.2" opacity="0.5"/>
+    <line x1="0"  y1="15" x2="26" y2="15" stroke="white" stroke-width="1.2" opacity="0.5"/>
+    <text x="3" y="28" font-family="serif" font-size="10" fill="white" opacity="0.9">π</text>
+    <text x="16" y="28" font-family="serif" font-size="9" fill="white" opacity="0.9">♩</text>
+  </g>
+  <text x="44" y="18" font-family="system-ui,sans-serif" font-size="7.5" font-weight="600" fill="#555" letter-spacing="0.3">Universidad Nacional</text>
+  <text x="44" y="30" font-family="system-ui,sans-serif" font-size="7.5" font-weight="600" fill="#555" letter-spacing="0.3">de Colombia · 1867</text>
+</svg>
