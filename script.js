@@ -60,7 +60,27 @@
     });
 })();
 
-// 3) Highlight the active section link in the sticky nav as you scroll.
+// 3) Email tooltip — click the icon to reveal the address; click anywhere else to dismiss.
+(function emailTooltip() {
+  var btn = document.getElementById("email-btn");
+  var tip = document.getElementById("email-tooltip");
+  if (!btn || !tip) return;
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    var isVisible = tip.classList.toggle("is-visible");
+    btn.setAttribute("aria-expanded", isVisible);
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!btn.contains(e.target) && !tip.contains(e.target)) {
+      tip.classList.remove("is-visible");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+})();
+
+// 4) Highlight the active section link in the sticky nav as you scroll.
 (function activeNav() {
   var links = Array.prototype.slice.call(
     document.querySelectorAll(".topnav a")

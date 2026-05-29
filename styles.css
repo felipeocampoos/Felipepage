@@ -101,6 +101,45 @@ a { color: var(--accent); }
   transform: translateY(-2px);
 }
 
+/* Email tooltip */
+.social__email-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.email-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.92);
+  background: var(--text);
+  color: #fff;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s ease, transform .15s ease;
+  z-index: 100;
+}
+
+.email-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--text);
+}
+
+.email-tooltip.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+
 /* ============================================================
    Sticky section nav
    ============================================================ */
