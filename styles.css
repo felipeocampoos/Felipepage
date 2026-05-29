@@ -1,0 +1,329 @@
+/* ============================================================
+   Design tokens — edit these to re-theme the whole page
+   ============================================================ */
+:root {
+  --accent: #2a6f97;          /* primary accent color */
+  --accent-soft: #e6f0f5;     /* light accent background */
+  --text: #1f2933;            /* main text */
+  --text-muted: #5c6b7a;      /* secondary text */
+  --surface: #ffffff;         /* card / page background */
+  --bg: #fafbfc;              /* page background */
+  --border: #e3e8ee;          /* hairlines */
+  --maxw: 800px;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a { color: var(--accent); }
+
+/* ============================================================
+   Hero / header
+   ============================================================ */
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 48px 0 40px;
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 4px solid var(--accent-soft);
+  background: var(--accent-soft);
+}
+
+.hero__text { min-width: 0; }
+
+.hero__name {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.hero__role {
+  margin: 4px 0 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero__bio {
+  margin: 12px 0 18px;
+  color: var(--text-muted);
+}
+
+/* Social icons */
+.social { display: flex; gap: 14px; }
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  transition: color .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.social__link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   Sticky section nav
+   ============================================================ */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.topnav__inner {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  padding: 14px 12px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav a:hover { color: var(--text); }
+
+.topnav a.is-active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 64px; /* offset for sticky nav */
+}
+
+.section:last-of-type { border-bottom: none; }
+
+.section__title {
+  margin: 0 0 20px;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 3px;
+  margin-top: 8px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ============================================================
+   Timeline (experience + education)
+   ============================================================ */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0 0 24px 22px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline__item:last-child { padding-bottom: 0; }
+
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--surface);
+}
+
+.timeline__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.timeline__role { margin: 0; font-size: 1.1rem; }
+
+.timeline__dates {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.timeline__org {
+  margin: 2px 0 8px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline__points {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Publications
+   ============================================================ */
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+
+.pub {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.pub__thumb {
+  width: 130px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--accent-soft);
+}
+
+.pub__body { min-width: 0; }
+
+.pub__title { margin: 0 0 4px; font-size: 1.08rem; }
+
+.pub__authors { margin: 0; color: var(--text); }
+
+.pub__venue { margin: 2px 0 6px; color: var(--text-muted); font-style: italic; }
+
+.pub__links { margin: 0; display: flex; gap: 14px; flex-wrap: wrap; }
+
+.pub__links a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pub__links a:hover { text-decoration: underline; }
+
+/* ============================================================
+   Skills
+   ============================================================ */
+.skills { display: grid; gap: 18px; }
+
+.skills__label {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips li {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.footer {
+  padding: 28px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 600px) {
+  .hero { padding: 36px 0 28px; }
+  .hero__inner { flex-direction: column; text-align: center; gap: 18px; }
+  .social { justify-content: center; }
+  .hero__name { font-size: 1.7rem; }
+  .topnav__inner { justify-content: center; }
+  .pub { flex-direction: column; }
+  .pub__thumb { width: 100%; height: 160px; }
+}
+
+/* ============================================================
+   Print — page doubles as a printable CV
+   ============================================================ */
+@media print {
+  .topnav, .social { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  .hero, .section { border: none; }
+  a { color: var(--text); text-decoration: none; }
+}
