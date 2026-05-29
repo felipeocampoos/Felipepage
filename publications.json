@@ -1,0 +1,52 @@
+[
+  {
+    "title": "TODO: paste the article title",
+    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "venue": "Smart Health (Elsevier)",
+    "year": 2023,
+    "thumb": "assets/pub1.svg",
+    "links": {
+      "URL": "https://www.sciencedirect.com/science/article/pii/S2352952023000725"
+    }
+  },
+  {
+    "title": "TODO: paste the article title",
+    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "venue": "BMC Anesthesiology",
+    "year": 2024,
+    "thumb": "assets/pub2.svg",
+    "links": {
+      "DOI": "https://doi.org/10.1186/s12871-024-02840-y"
+    }
+  },
+  {
+    "title": "TODO: paste the article title",
+    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "venue": "Frontiers in Immunology",
+    "year": 2025,
+    "thumb": "assets/pub1.svg",
+    "links": {
+      "DOI": "https://doi.org/10.3389/fimmu.2025.1635159"
+    }
+  },
+  {
+    "title": "TODO: paste the chapter/book title",
+    "authors": "TODO: Author A, Felipe Ocampo",
+    "venue": "Ferrites (book chapter)",
+    "year": 2024,
+    "thumb": "assets/pub2.svg",
+    "links": {
+      "URL": "https://books.google.com/books/about/Ferrites.html?id=zbZaEAAAQBAJ"
+    }
+  },
+  {
+    "title": "TODO: paste the article title",
+    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "venue": "PeerJ Computer Science",
+    "year": 2025,
+    "thumb": "assets/pub1.svg",
+    "links": {
+      "DOI": "https://doi.org/10.7717/peerj-cs.2762"
+    }
+  }
+]

@@ -33,6 +33,34 @@ Open the file and update:
   name is `<strong>` so it stands out among co-authors.
 - **Skills:** rename the groups and chips.
 
+### Add or update publications (no HTML editing)
+
+Publications are generated automatically from **`publications.json`**. The page
+reads that file and renders the list (newest first). To add a new paper, just
+add one object to the array — you never touch `index.html`:
+
+```json
+{
+  "title": "Your new article title",
+  "authors": "Author A, Felipe Ocampo, Author C",
+  "venue": "Journal or Conference name",
+  "year": 2026,
+  "thumb": "assets/pub1.svg",
+  "links": {
+    "DOI": "https://doi.org/10.xxxx/xxxxx",
+    "PDF": "https://...",
+    "URL": "https://..."
+  }
+}
+```
+
+Notes:
+- `links` can have any labels you want (`DOI`, `PDF`, `Code`, `URL`, …).
+- Your own name (`Felipe Ocampo`) is automatically **bolded** among the authors.
+- `thumb` is optional; defaults to `assets/pub1.svg`.
+
+Then commit and push — the live page updates on the next GitHub Pages build.
+
 ### Replace the images
 
 Put your own files in `assets/` and update the `src` in `index.html`:
