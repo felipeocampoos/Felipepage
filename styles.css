@@ -317,15 +317,18 @@ a { color: var(--accent); }
 
 .pub__venue { margin: 2px 0 6px; color: var(--text-muted); font-style: italic; }
 
-.pub__links { margin: 0; display: flex; gap: 14px; flex-wrap: wrap; }
+.pub__links { margin: 0; }
 
-.pub__links a {
-  font-size: 0.9rem;
-  font-weight: 600;
+.pub__doi-link {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.82rem;
+  color: var(--accent);
   text-decoration: none;
+  word-break: break-all;
+  display: inline-block;
 }
 
-.pub__links a:hover { text-decoration: underline; }
+.pub__doi-link:hover { text-decoration: underline; }
 
 /* ============================================================
    Skills

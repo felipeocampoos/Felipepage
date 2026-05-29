@@ -34,8 +34,10 @@
 
       list.innerHTML = pubs.map(function (p) {
         var links = Object.keys(p.links || {}).map(function (label) {
-          return '<a href="' + esc(p.links[label]) +
-            '" target="_blank" rel="noopener">' + esc(label) + "</a>";
+          var href = p.links[label];
+          // Always show the full URL as the link text so it's readable and copyable
+          return '<a class="pub__doi-link" href="' + esc(href) +
+            '" target="_blank" rel="noopener">' + esc(href) + "</a>";
         }).join("");
         var venue = [p.venue, p.year].filter(Boolean).map(esc).join(", ");
 
