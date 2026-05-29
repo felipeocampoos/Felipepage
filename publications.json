@@ -1,5 +1,41 @@
 [
   {
+    "title": "From diverse CT scans to generalization: towards robust abdominal organ segmentation",
+    "venue": "BMC Medical Imaging",
+    "year": 2026,
+    "links": { "DOI": "https://doi.org/10.1186/s12880-026-02206-5" }
+  },
+  {
+    "title": "Artificial Intelligence in the Diagnosis of Hirschsprung Disease: A Scoping Review and Rationale for a Multicentric Approach",
+    "venue": "Journal of Pediatric Surgery",
+    "year": 2026,
+    "links": { "DOI": "https://doi.org/10.1016/j.jpedsurg.2026.162932" }
+  },
+  {
+    "title": "When evidence meets artificial intelligence",
+    "venue": "The Lancet Regional Health – Americas",
+    "year": 2026,
+    "links": { "DOI": "https://doi.org/10.1016/j.lana.2026.101472" }
+  },
+  {
+    "title": "Engineering framework for curiosity-driven and humble AI in clinical decision support",
+    "venue": "BMJ Health & Care Informatics",
+    "year": 2026,
+    "links": { "DOI": "https://doi.org/10.1136/bmjhci-2025-101877" }
+  },
+  {
+    "title": "Smart CAR-T Nanosymbionts: archetypes and proto-models",
+    "venue": "Frontiers in Immunology",
+    "year": 2025,
+    "links": { "DOI": "https://doi.org/10.3389/fimmu.2025.1635159" }
+  },
+  {
+    "title": "Predicting no-shows at outpatient appointments in internal medicine using machine learning models",
+    "venue": "PeerJ Computer Science",
+    "year": 2025,
+    "links": { "DOI": "https://doi.org/10.7717/peerj-cs.2762" }
+  },
+  {
     "title": "The anesthesiologist's guide to critically assessing machine learning research: a narrative review",
     "venue": "BMC Anesthesiology",
     "year": 2024,
@@ -10,23 +46,5 @@
     "venue": "OpenNano",
     "year": 2023,
     "links": { "DOI": "https://doi.org/10.1016/j.onano.2023.100193" }
-  },
-  {
-    "title": "TODO: Frontiers in Immunology article title",
-    "venue": "Frontiers in Immunology",
-    "year": 2025,
-    "links": { "DOI": "https://doi.org/10.3389/fimmu.2025.1635159" }
-  },
-  {
-    "title": "TODO: Ferrites book chapter title",
-    "venue": "Ferrites (book chapter)",
-    "year": 2024,
-    "links": { "URL": "https://books.google.com/books/about/Ferrites.html?id=zbZaEAAAQBAJ" }
-  },
-  {
-    "title": "TODO: PeerJ Computer Science article title",
-    "venue": "PeerJ Computer Science",
-    "year": 2025,
-    "links": { "DOI": "https://doi.org/10.7717/peerj-cs.2762" }
   }
 ]
