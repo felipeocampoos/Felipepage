@@ -1,52 +1,32 @@
 [
   {
-    "title": "TODO: paste the article title",
-    "authors": "TODO: Author A, Felipe Ocampo, Author C",
-    "venue": "Smart Health (Elsevier)",
-    "year": 2023,
-    "thumb": "assets/pub1.svg",
-    "links": {
-      "URL": "https://www.sciencedirect.com/science/article/pii/S2352952023000725"
-    }
-  },
-  {
-    "title": "TODO: paste the article title",
-    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "title": "The anesthesiologist's guide to critically assessing machine learning research: a narrative review",
     "venue": "BMC Anesthesiology",
     "year": 2024,
-    "thumb": "assets/pub2.svg",
-    "links": {
-      "DOI": "https://doi.org/10.1186/s12871-024-02840-y"
-    }
+    "links": { "DOI": "https://doi.org/10.1186/s12871-024-02840-y" }
   },
   {
-    "title": "TODO: paste the article title",
-    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "title": "Drug loading comparison of commercial ibuprofen on magnetite nanoparticles surface by UV–Vis spectrophotometry and acid-alkali titration by a factorial design of experiments",
+    "venue": "OpenNano",
+    "year": 2023,
+    "links": { "DOI": "https://doi.org/10.1016/j.onano.2023.100193" }
+  },
+  {
+    "title": "TODO: Frontiers in Immunology article title",
     "venue": "Frontiers in Immunology",
     "year": 2025,
-    "thumb": "assets/pub1.svg",
-    "links": {
-      "DOI": "https://doi.org/10.3389/fimmu.2025.1635159"
-    }
+    "links": { "DOI": "https://doi.org/10.3389/fimmu.2025.1635159" }
   },
   {
-    "title": "TODO: paste the chapter/book title",
-    "authors": "TODO: Author A, Felipe Ocampo",
+    "title": "TODO: Ferrites book chapter title",
     "venue": "Ferrites (book chapter)",
     "year": 2024,
-    "thumb": "assets/pub2.svg",
-    "links": {
-      "URL": "https://books.google.com/books/about/Ferrites.html?id=zbZaEAAAQBAJ"
-    }
+    "links": { "URL": "https://books.google.com/books/about/Ferrites.html?id=zbZaEAAAQBAJ" }
   },
   {
-    "title": "TODO: paste the article title",
-    "authors": "TODO: Author A, Felipe Ocampo, Author C",
+    "title": "TODO: PeerJ Computer Science article title",
     "venue": "PeerJ Computer Science",
     "year": 2025,
-    "thumb": "assets/pub1.svg",
-    "links": {
-      "DOI": "https://doi.org/10.7717/peerj-cs.2762"
-    }
+    "links": { "DOI": "https://doi.org/10.7717/peerj-cs.2762" }
   }
 ]

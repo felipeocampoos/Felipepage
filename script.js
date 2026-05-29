@@ -33,7 +33,6 @@
       pubs.sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
 
       list.innerHTML = pubs.map(function (p) {
-        var thumb = p.thumb || "assets/pub1.svg";
         var links = Object.keys(p.links || {}).map(function (label) {
           return '<a href="' + esc(p.links[label]) +
             '" target="_blank" rel="noopener">' + esc(label) + "</a>";
@@ -41,11 +40,9 @@
         var venue = [p.venue, p.year].filter(Boolean).map(esc).join(", ");
 
         return '' +
-          '<li class="pub">' +
-            '<img class="pub__thumb" src="' + esc(thumb) + '" alt="" />' +
+          '<li class="pub pub--text">' +
             '<div class="pub__body">' +
               '<h3 class="pub__title">' + esc(p.title) + "</h3>" +
-              '<p class="pub__authors">' + highlightSelf(p.authors) + "</p>" +
               (venue ? '<p class="pub__venue">' + venue + "</p>" : "") +
               (links ? '<p class="pub__links">' + links + "</p>" : "") +
             "</div>" +
